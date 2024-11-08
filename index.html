@@ -6,7 +6,7 @@
     <title>Paradas</title>
   </head>
   <body>
-    <div><button id="home">Home</button><button id="about">About</button><button id="courses">Courses</button></div>
+    <div><button id="home">Home</button><button id="about">About</button><button id="courses">Courses</button><button id="more">More</button></div>
     <script>
       const div = document.querySelector("div");
       div.addEventListener("click", (e) => {
@@ -14,15 +14,17 @@
 
         switch (id) {
           case 'home':
-            console.log('home');
+            alert('home');
             break
           case 'courses':
-            console.log('courses');
+            alert('courses');
             break
           case 'about':
-            console.log('about');
+            alert('about');
             break
-
+          case 'more':
+            alert('more');
+            break
         }
       });
     </script>
