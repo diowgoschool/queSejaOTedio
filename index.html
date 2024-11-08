@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Paradas</title>
+  </head>
+  <body>
+    <div><button id="home">Home</button><button id="about">About</button><button id="courses">Courses</button></div>
+    <script>
+      const div = document.querySelector("div");
+      div.addEventListener("click", (e) => {
+        const id = e.target.id
+
+        switch (id) {
+          case 'home':
+            console.log('home');
+            break
+          case 'courses':
+            console.log('courses');
+            break
+          case 'about':
+            console.log('about');
+            break
+
+        }
+      });
+    </script>
+  </body>
+</html>
